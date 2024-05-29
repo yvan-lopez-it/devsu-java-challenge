@@ -1,0 +1,589 @@
+{
+	"info": {
+		"_postman_id": "78dfb38d-0485-4e83-b83d-2d4dde2d44e2",
+		"name": "Cuentas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "501348"
+	},
+	"item": [
+		{
+			"name": "Create cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": \"C123\",\r\n    \"numeroCuenta\": \"585545\",\r\n    \"tipoCuenta\": \"CORRIENTE\",\r\n    \"saldoInicial\": 1000,\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"cuentas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"478758\",\r\n  \"tipoCuenta\": \"AHORROS\",\r\n  \"saldoInicial\": 2000,\r\n  \"clientId\": \"C123\",\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 03:40:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"clientId\": \"C123\",\n    \"numeroCuenta\": \"478758\",\n    \"tipoCuenta\": \"AHORROS\",\n    \"saldoInicial\": 2000,\n    \"estado\": true,\n    \"createdAt\": \"2024-05-28T22:40:52.6876155\"\n}"
+				},
+				{
+					"name": "Marianella 201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"225487\",\r\n  \"tipoCuenta\": \"CORRIENTE\",\r\n  \"saldoInicial\": 100,\r\n  \"clientId\": \"C213\",\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 03:43:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"clientId\": \"C213\",\n    \"numeroCuenta\": \"225487\",\n    \"tipoCuenta\": \"CORRIENTE\",\n    \"saldoInicial\": 100,\n    \"estado\": true,\n    \"createdAt\": \"2024-05-28T22:43:22.010353\"\n}"
+				},
+				{
+					"name": "Juan Osorio 201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"495878\",\r\n  \"tipoCuenta\": \"AHORROS\",\r\n  \"saldoInicial\": 0,\r\n  \"clientId\": \"C231\",\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 03:44:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"clientId\": \"C231\",\n    \"numeroCuenta\": \"495878\",\n    \"tipoCuenta\": \"AHORROS\",\n    \"saldoInicial\": 0,\n    \"estado\": true,\n    \"createdAt\": \"2024-05-28T22:44:16.3263006\"\n}"
+				},
+				{
+					"name": "Marianella 201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"496825\",\r\n  \"tipoCuenta\": \"AHORROS\",\r\n  \"saldoInicial\": 540,\r\n  \"clientId\": \"C213\",\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 03:45:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"clientId\": \"C213\",\n    \"numeroCuenta\": \"496825\",\n    \"tipoCuenta\": \"AHORROS\",\n    \"saldoInicial\": 540,\n    \"estado\": true,\n    \"createdAt\": \"2024-05-28T22:45:20.0898422\"\n}"
+				},
+				{
+					"name": "Jose Lema - Corriente - 201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"C123\",\r\n    \"numeroCuenta\": \"585545\",\r\n    \"tipoCuenta\": \"CORRIENTE\",\r\n    \"saldoInicial\": 1000,\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 03:57:53 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"clientId\": \"C123\",\n    \"numeroCuenta\": \"585545\",\n    \"tipoCuenta\": \"CORRIENTE\",\n    \"saldoInicial\": 1000,\n    \"estado\": true,\n    \"createdAt\": \"2024-05-28T22:57:53.0183509\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"cuentas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 04:00:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"clientId\": \"C123\",\n        \"numeroCuenta\": \"478758\",\n        \"tipoCuenta\": \"AHORROS\",\n        \"saldoInicial\": 2000,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:40:52.687616\"\n    },\n    {\n        \"id\": 2,\n        \"clientId\": \"C213\",\n        \"numeroCuenta\": \"225487\",\n        \"tipoCuenta\": \"CORRIENTE\",\n        \"saldoInicial\": 100,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:43:22.010353\"\n    },\n    {\n        \"id\": 3,\n        \"clientId\": \"C231\",\n        \"numeroCuenta\": \"495878\",\n        \"tipoCuenta\": \"AHORROS\",\n        \"saldoInicial\": 0,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:44:16.326301\"\n    },\n    {\n        \"id\": 4,\n        \"clientId\": \"C213\",\n        \"numeroCuenta\": \"496825\",\n        \"tipoCuenta\": \"AHORROS\",\n        \"saldoInicial\": 540,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:45:20.089842\"\n    },\n    {\n        \"id\": 5,\n        \"clientId\": \"C123\",\n        \"numeroCuenta\": \"585545\",\n        \"tipoCuenta\": \"CORRIENTE\",\n        \"saldoInicial\": 1000,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:57:53.018351\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get cuenta by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas/:cuentaId",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"cuentas",
+						":cuentaId"
+					],
+					"variable": [
+						{
+							"key": "cuentaId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get cuenta by Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas/:cuentaId",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas",
+								":cuentaId"
+							],
+							"variable": [
+								{
+									"key": "cuentaId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 04:07:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"clientId\": \"C123\",\n    \"numeroCuenta\": \"478758\",\n    \"tipoCuenta\": \"AHORROS\",\n    \"saldoInicial\": 2000,\n    \"estado\": true,\n    \"createdAt\": \"2024-05-28T22:40:52.687616\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update cuenta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": \"C123\",\r\n    \"numeroCuenta\": \"478758\",\r\n    \"tipoCuenta\": \"AHORROS\",\r\n    \"saldoInicial\": 3000,\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas/:cuentaId",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"cuentas",
+						":cuentaId"
+					],
+					"variable": [
+						{
+							"key": "cuentaId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"C123\",\r\n    \"numeroCuenta\": \"478758\",\r\n    \"tipoCuenta\": \"AHORROS\",\r\n    \"saldoInicial\": 3000,\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas/:cuentaId",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"cuentas",
+								":cuentaId"
+							],
+							"variable": [
+								{
+									"key": "cuentaId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 04:11:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"clientId\": \"C123\",\n    \"numeroCuenta\": \"478758\",\n    \"tipoCuenta\": \"AHORROS\",\n    \"saldoInicial\": 3000,\n    \"estado\": true,\n    \"createdAt\": \"2024-05-28T22:40:52.687616\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete cuenta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/cuentas/:cuentaId",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"cuentas",
+						":cuentaId"
+					],
+					"variable": [
+						{
+							"key": "cuentaId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

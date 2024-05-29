@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "3aa56531-3ed5-4f57-85b7-abcc4670588d",
+		"name": "Reportes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "501348"
+	},
+	"item": [
+		{
+			"name": "Reporte",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/reportes?fechaInicio=2024-05-01&fechaFin=2024-05-31&cliente=C213",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"reportes"
+					],
+					"query": [
+						{
+							"key": "fechaInicio",
+							"value": "2024-05-01"
+						},
+						{
+							"key": "fechaFin",
+							"value": "2024-05-31"
+						},
+						{
+							"key": "cliente",
+							"value": "C213"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reporte v1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/reportes?fechaInicio=2024-05-01&fechaFin=2024-05-31&cliente=C213",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "fechaInicio",
+									"value": "2024-05-01"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2024-05-31"
+								},
+								{
+									"key": "cliente",
+									"value": "C213"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 10:43:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"fecha\": \"2024-05-29T04:23:55.611323\",\n        \"cliente\": \"C213\",\n        \"numeroCuenta\": \"496825\",\n        \"tipo\": \"AHORROS\",\n        \"saldoInicial\": 0,\n        \"estado\": true,\n        \"movimiento\": -540,\n        \"saldoDisponible\": 540\n    },\n    {\n        \"fecha\": \"2024-05-29T04:18:43.382329\",\n        \"cliente\": \"C213\",\n        \"numeroCuenta\": \"225487\",\n        \"tipo\": \"CORRIENTE\",\n        \"saldoInicial\": 700,\n        \"estado\": true,\n        \"movimiento\": 600,\n        \"saldoDisponible\": 100\n    }\n]"
+				},
+				{
+					"name": "Reporte OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/reportes?fechaInicio=2024-05-01&fechaFin=2024-05-31&cliente=C213",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "fechaInicio",
+									"value": "2024-05-01"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2024-05-31"
+								},
+								{
+									"key": "cliente",
+									"value": "C213"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 11:34:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"fecha\": \"29/05/2024\",\n        \"cliente\": \"Marianela Montalvo\",\n        \"numeroCuenta\": \"496825\",\n        \"tipo\": \"AHORROS\",\n        \"saldoInicial\": 540,\n        \"estado\": true,\n        \"movimiento\": -540,\n        \"saldoDisponible\": 0\n    },\n    {\n        \"fecha\": \"29/05/2024\",\n        \"cliente\": \"Marianela Montalvo\",\n        \"numeroCuenta\": \"225487\",\n        \"tipo\": \"CORRIENTE\",\n        \"saldoInicial\": 100,\n        \"estado\": true,\n        \"movimiento\": 600,\n        \"saldoDisponible\": 700\n    }\n]"
+				}
+			]
+		}
+	]
+}

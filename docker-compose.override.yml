@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  customer-service:
+    volumes:
+      - ./ms-customer/src:/app/src
+      - ./ms-customer/target/classes:/app/classes
+    command: mvn spring-boot:run
+
+  account-service:
+    volumes:
+      - ./ms-account/src:/app/src
+      - ./ms-account/target/classes:/app/classes
+    command: mvn spring-boot:run

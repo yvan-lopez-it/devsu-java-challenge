@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "99d96319-b11b-41aa-b8da-56dfc58a2beb",
+		"name": "Movimientos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "501348"
+	},
+	"item": [
+		{
+			"name": "Crear movimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cuentaId\": \"496825\",\r\n    \"tipoMovimiento\": \"RETIRO\",\r\n    \"valor\": -540\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"movimientos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cuentaId\": \"478758\",\r\n  \"tipoMovimiento\": \"Retiro de 575\",\r\n  \"valor\": 575\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"movimientos"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 09:10:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"tipoMovimiento\": \"Retiro de 575\",\n    \"valor\": 575,\n    \"saldo\": 2000,\n    \"cuenta\": {\n        \"id\": 1,\n        \"clientId\": \"C123\",\n        \"numeroCuenta\": \"478758\",\n        \"tipoCuenta\": \"AHORROS\",\n        \"saldoInicial\": 2575,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:40:52.687616\"\n    },\n    \"fecha\": \"2024-05-29T04:10:30.4357046\",\n    \"createdAt\": \"2024-05-29T04:10:30.4362086\"\n}"
+				},
+				{
+					"name": "retiro -575 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cuentaId\": \"478758\",\r\n  \"tipoMovimiento\": \"Retiro de 575\",\r\n  \"valor\": -575\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"movimientos"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 09:17:39 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"tipoMovimiento\": \"Retiro de 575\",\n    \"valor\": -575,\n    \"saldo\": 2000,\n    \"cuenta\": {\n        \"id\": 1,\n        \"clientId\": \"C123\",\n        \"numeroCuenta\": \"478758\",\n        \"tipoCuenta\": \"AHORROS\",\n        \"saldoInicial\": 1425,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:40:52.687616\"\n    },\n    \"fecha\": \"2024-05-29T04:17:39.5812568\",\n    \"createdAt\": \"2024-05-29T04:17:39.5812568\"\n}"
+				},
+				{
+					"name": "Deposito de +600 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuentaId\": \"225487\",\r\n    \"tipoMovimiento\": \"Deposito de 600\",\r\n    \"valor\": 600\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"movimientos"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 09:18:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"tipoMovimiento\": \"Deposito de 600\",\n    \"valor\": 600,\n    \"saldo\": 100,\n    \"cuenta\": {\n        \"id\": 2,\n        \"clientId\": \"C213\",\n        \"numeroCuenta\": \"225487\",\n        \"tipoCuenta\": \"CORRIENTE\",\n        \"saldoInicial\": 700,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:43:22.010353\"\n    },\n    \"fecha\": \"2024-05-29T04:18:43.3823286\",\n    \"createdAt\": \"2024-05-29T04:18:43.3823286\"\n}"
+				},
+				{
+					"name": "Retiro -540 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuentaId\": \"496825\",\r\n    \"tipoMovimiento\": \"RETIRO\",\r\n    \"valor\": -540\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto_mscuentas}}",
+							"path": [
+								"api",
+								"movimientos"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 May 2024 09:23:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"tipoMovimiento\": \"RETIRO\",\n    \"valor\": -540,\n    \"saldo\": 540,\n    \"cuenta\": {\n        \"id\": 4,\n        \"clientId\": \"C213\",\n        \"numeroCuenta\": \"496825\",\n        \"tipoCuenta\": \"AHORROS\",\n        \"saldoInicial\": 0,\n        \"estado\": true,\n        \"createdAt\": \"2024-05-28T22:45:20.089842\"\n    },\n    \"fecha\": \"2024-05-29T04:23:55.6113226\",\n    \"createdAt\": \"2024-05-29T04:23:55.6113226\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all Movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get movimiento by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos/:movimientoId",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"movimientos",
+						":movimientoId"
+					],
+					"variable": [
+						{
+							"key": "movimientoId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update movimiento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipo\": \"DEPOSITO\",\r\n  \"monto\": 600,\r\n  \"descripcion\": \"Depósito en ventanilla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos/:movimientoId",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"movimientos",
+						":movimientoId"
+					],
+					"variable": [
+						{
+							"key": "movimientoId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movimiento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{servidor}}:{{puerto_mscuentas}}/api/movimientos/:movimientoId",
+					"protocol": "http",
+					"host": [
+						"{{servidor}}"
+					],
+					"port": "{{puerto_mscuentas}}",
+					"path": [
+						"api",
+						"movimientos",
+						":movimientoId"
+					],
+					"variable": [
+						{
+							"key": "movimientoId",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
