@@ -1,8 +1,6 @@
-# Documentación para el devsu-java-challenge
+# Devsu - Ejercicio practico Java
 
-Ejercicio practico Java - Devsu
+## Microservicios:
 
-Repositorios asociados:
-
-- [Microservicio - Cliente](https://github.com/yvan-lopez-it/ms-customer)
-- [Microservicio - Cuenta](https://github.com/yvan-lopez-it/ms-account)
+- Cliente: ms-customer
+- Cuenta: ms-account
