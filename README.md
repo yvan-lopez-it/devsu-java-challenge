@@ -1,4 +1,4 @@
-# Devsu - Ejercicio practico Java
+# Devsu - Ejercicio práctico Java
 
 ## Microservicios:
 
